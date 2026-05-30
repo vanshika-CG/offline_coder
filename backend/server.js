@@ -20,7 +20,15 @@ connectDB();
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://offlinecoderr.netlify.app",
+      "http://localhost:3000",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // Legacy/Direct extension support

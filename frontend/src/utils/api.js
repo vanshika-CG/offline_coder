@@ -1,7 +1,7 @@
 import axios from "axios";
 import dbInstance from "./db";
 
-const API_BASE_URL = "http://localhost:3001";
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // Axios Instance
 const api = axios.create({
