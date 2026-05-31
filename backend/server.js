@@ -26,6 +26,8 @@ app.use(
       "https://offlinecoderr.netlify.app",
       "http://localhost:5173",
       "http://localhost:3000",
+      "https://leetcode.com",
+
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],

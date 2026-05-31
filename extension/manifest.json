@@ -2,11 +2,23 @@
   "manifest_version": 3,
   "name": "LeetCode Saver",
   "version": "1.0",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://offlinecoder.onrender.com/*",
+    "http://localhost:3001/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://leetcode.com/problems/*"],
-      "js": ["content.js"]
+      "matches": [
+        "https://leetcode.com/problems/*"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
   ]
 }
